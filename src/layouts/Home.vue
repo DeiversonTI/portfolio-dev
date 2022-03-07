@@ -44,25 +44,25 @@
           />
         </div>
         <div class="  justify-center items-center col-xs-12 col-sm-12 col-md-6 " >
-          <div class="q-pa-md flex justify-start content-center items-center  text-left fit ">
-            <div class="q-pb-sm home_title1">
-              Deiverson Chaves
-              <br>
-            <span class=" home_title2 ">
-              Desenvolvedor Front-End
-            </span>
+            <div class="q-pa-md flex justify-start content-center items-center  text-left fit ">
+                <div class="q-pb-sm home_title1">
+                  Deiverson Chaves
+                  <br>
+                <span class=" home_title2 ">
+                  Desenvolvedor Front-End
+                </span>
+                </div>
+                <div class=" text-weight-thin text-justify home_title3 ">
+                Estabeleçendo novos desafios, saindo da sua zona de conforto,
+                    enfrentando meus maiores medos todos os dias.
+                </div>
+                <q-btn
+                      rounded
+                      label="Contact"
+                      color="indigo-7"
+                      class="btn__contact"
+                />
             </div>
-          <div class=" text-weight-thin text-justify home_title3 ">
-           Estabeleçendo novos desafios, saindo da sua zona de conforto,
-               enfrentando meus maiores medos todos os dias.
-          </div>
-          <q-btn
-                rounded
-                label="Contact"
-                color="indigo-7"
-                class="btn__contact"
-              />
-         </div>
         </div>
         </q-page>
       </q-page-container>

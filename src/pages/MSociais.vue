@@ -3,9 +3,11 @@
   <q-page-container>
     <q-page padding class="bg-blue-grey-1">
       <div class=" row  flex justify-center items-center window-height">
-        <div class=" q-pa-md q-space-lg col-xs-12 col-sm-12 col-md-5 ">
-          <div class="text-h4 text-weight-bold ">Olá, sou Deiverson Chaves<br>
-          <span class="text-h3 text-indigo-5">Desenvolvedor Front-End</span></div>
+        <div class=" q-pa-md q-space-lg col-xs-12 col-sm-12 col-md-5 q-gutter-y-lg ">
+          <div class="text-h4 text-weight-bold ">
+              Olá, sou Deiverson Chaves<br>
+              <span class="text-h3 text-indigo-5">Desenvolvedor Front-End</span>
+          </div>
           <div class="text-h5 text-justify text-weight-thin">Projeto e desenvolvo serviços de websites elegantes e modernos e serviços da web.
             Minha paixão é projetar experiências digitais de usuários através de interações
             significativas. Confira meu portfólio.
