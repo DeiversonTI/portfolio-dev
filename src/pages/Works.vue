@@ -29,7 +29,7 @@
            </q-item>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-auto bg-grey-1 q-pa-md work__linkBox ">
+         <div class="col-xs-12 col-sm-12 col-md-auto bg-grey-1 q-pa-md work__linkBox">
           <img src="../assets/work03.jpg"
           style="max-width: 100%;" />
            <div>
@@ -37,12 +37,11 @@
               <q-item-section>
                 <q-item-label class="text-h6 text-orange-8">Carodromo Digital 2021 - html, css e js</q-item-label>
                 <q-item-label caption lines="2">Website de apresentação de fotos e nomes dos usuários</q-item-label>
-
               </q-item-section>
            </q-item>
           </div>
         </div>
-      </div>
+       </div>
     </div>
   </section>
 </template>

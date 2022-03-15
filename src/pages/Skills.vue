@@ -418,7 +418,7 @@ export default defineComponent({
  .skills__box{
   width: 100%;
   margin: 0 auto;
-  background: turquoise;
+
 }
 .skills__boxfull{
   width: 100%;

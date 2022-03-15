@@ -27,6 +27,41 @@
               </div>
           </div>
           <hr>
+          <div class="q-pa-md q-gutter-md">
+            <div>
+                <span class="skills__port">HTML</span>
+                <q-linear-progress  size="18px" :value="progress1" class="colorizar" >
+                  <div class="absolute-full flex flex-center">
+                    <q-badge  color="white" text-color="accent" :label="progressLabel1" />
+                  </div>
+                </q-linear-progress>
+            </div>
+            <div >
+               <span class="skills__port">CSS</span>
+                <q-linear-progress size="18px" :value="progress2"  class="colorizar">
+                  <div class="absolute-full flex flex-center">
+                    <q-badge color="white" text-color="accent" :label="progressLabel2" />
+                  </div>
+                </q-linear-progress>
+            </div>
+            <div >
+              <span class="skills__port">Javascript</span>
+                <q-linear-progress size="18px" :value="progress3"  class="colorizar">
+                  <div class="absolute-full flex flex-center">
+                    <q-badge color="white" text-color="accent" :label="progressLabel3" />
+                  </div>
+                </q-linear-progress>
+            </div>
+             <div >
+               <span class="skills__port">VueJs</span>
+                <q-linear-progress size="18px" :value="progress4"  class="colorizar">
+                  <div class="absolute-full flex flex-center">
+                    <q-badge color="white" text-color="accent" :label="progressLabel4" />
+                  </div>
+                </q-linear-progress>
+            </div>
+          </div>
+
         </div>
 
         <div class=" flex justify-center items-center col-xs-12 col-sm-12 col-md-6 " >
@@ -179,9 +214,29 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, computed, ref } from 'vue'
 
 export default defineComponent({
-  name: 'PageMSociais'
+  name: 'PageMSociais',
+  setup () {
+    const progress1 = ref(0.9)
+    const progress2 = ref(0.95)
+    const progress3 = ref(0.65)
+    const progress4 = ref(0.95)
+
+    return {
+      progress1,
+      progressLabel1: computed(() => (progress1.value * 100).toFixed(2) + '%'),
+
+      progress2,
+      progressLabel2: computed(() => (progress2.value * 100).toFixed(2) + '%'),
+
+      progress3,
+      progressLabel3: computed(() => (progress3.value * 100).toFixed(2) + '%'),
+
+      progress4,
+      progressLabel4: computed(() => (progress4.value * 100).toFixed(2) + '%')
+    }
+  }
 })
 </script>
