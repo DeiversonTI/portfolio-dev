@@ -39,9 +39,9 @@
                 </a>
               </div>
               <div class="hamb__link">
-                <a href="#msociais" >
+                <a href="#sobre" >
                   <q-icon name="mdi-web" class="icon_n" />
-                  <span>Sociais</span>
+                  <span>Sobre</span>
                 </a>
               </div>
               <div class="hamb__link">
@@ -66,14 +66,14 @@
       </div>
     </q-drawer>
     <q-page-container  >
-        <q-page padding id="Home" class="row  flex justify-center items-center bg-portifolio">
-                  <div class="col-md-12 q-pa-xl animar2" >
+        <q-page padding id="Home" class="row  flex justify-center items-center bg-portifolio ">
+                  <div class=" col-xs-12 col-sm-12  col-md-12 animar2" >
                     <div class=" text-center home_title1">Portifólio</div>
                     <div class=" text-center home_title2">Deiverson Chaves</div>
                     <div class=" text-weight-thin text-center home_title3 ">
                       |  DEVELOPER FRONT END  |  UI/UX DESIGNER  |
                     </div>
-                   <a href="#msociais">
+                   <a href="#sobre">
                       <div class="q-pa-md flex justify-center items-center ">
                         <div class="btn__home">
                           <span class=" btn__font">SOBRE MIM</span>
@@ -82,7 +82,7 @@
                        </div>
                     </a>
                   </div>
-                  <div class="col-md-12 flex items-center flex-center q-gutter-x-md animar1 ">
+                  <div class="flex items-center flex-center q-gutter-x-md animar1  ">
                     <q-item manual-focus href="https://www.linkedin.com/in/deiverson-chaves-de-araujo/" target="blank">
                      <q-icon title="linkedin" name="mdi-linkedin" color="blue-grey-3" size="md" />
                     </q-item>
@@ -128,7 +128,7 @@
     <!-- ******************* -->
     <!-- Página Rede Social -->
     <q-page>
-      <div id="msociais">
+      <div id="sobre">
         <social />
       </div>
     </q-page>
@@ -169,7 +169,7 @@
 </template>
 <script>
 import { defineComponent, ref } from 'vue'
-import social from '../pages/MSociais.vue'
+import social from '../pages/sobre.vue'
 import skill from '../pages/Skills.vue'
 import work from '../pages/Works.vue'
 import contatos from '../pages/Contact.vue'
@@ -245,13 +245,13 @@ export default defineComponent({
 .btn__home
   border: 1px solid #fff
   border-radius: 5px
-  width: 20%
+  width: 10%
   padding: 10px 0
   text-align: center
   margin-top: 30px
 
   &:hover
-    border: 2px solid $blue-grey-9
+    border: 1px solid $blue-grey-4
     color: $blue-grey-12
 
 .btn__font

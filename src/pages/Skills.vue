@@ -387,9 +387,8 @@ export default defineComponent({
   text-align: center;
 
 }
-  section{
+section{
     min-height: 100vh;
-    background: $grey-1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,14 +414,14 @@ export default defineComponent({
 }
 
 @media(max-width: $breakpoint-xs-max){
- .skills__box{
-  width: 100%;
-  margin: 0 auto;
+  .skills__box{
+    width: 100%;
+    margin: 0 auto;
 
-}
-.skills__boxfull{
-  width: 100%;
-}
+  }
+  .skills__boxfull{
+      width: 100%;
+  }
 
 }
 

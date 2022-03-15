@@ -69,17 +69,25 @@ a{
 }
 
 .skills__port{
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: Poppins;
   color: $blue-grey-7;
 }
 
 .colorizar{
-  color: #5c629d;
+  color: $blue-grey-8;
 }
 
 
-// @media screen and (max-width:640px){
+@media screen and (max-width: 1115px){
+  .home_title2{
+    font-size: 3em;
+
+  }
+  .home_title3{
+    font-size: 1.2em;
+  }
+}
 //   .font__topo{
 //   font-size: 1em;
 //   font-family:Verdana, Geneva, Tahoma, sans-serif;
