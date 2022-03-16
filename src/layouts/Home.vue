@@ -1,37 +1,20 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-header reveal class="bg-blue-grey-1"  elevated >
+   <q-layout  >
+    <q-header reveal class="bg-blue-grey-10" >
       <q-toolbar>
         <q-toolbar-title>
           <div class="row items-center">
             <div class="col text-left q-ml-md">
-              <a href="#Home">
-                <span class="font__topo">Deiverson Chaves</span>
-              </a>
+              <span class="font__topo">Deiverson Chaves</span>
             </div>
          </div>
         </q-toolbar-title>
-          <q-btn dense flat color="black" round size="xl" icon="menu" @click="toggleRightDrawer" />
+          <q-btn dense flat color="white" round size="xl" icon="menu" @click="toggleRightDrawer" />
        </q-toolbar>
     </q-header>
     <q-drawer v-model="rightDrawerOpen" side="right" behavior="mobile" bordered   >
        <div class="q-pa-xs links__site link__link" style="max-width: 350px; ">
             <q-list padding class="rounded-borders ">
-              <!-- <a href="#Home">
-                <q-expansion-item expand-separator icon="mdi-home-outline" label="Home" />
-              </a>
-              <a href="#msociais">
-                <q-expansion-item expand-separator icon="mdi-web" label="Sociais" />
-              </a>
-              <a href="#skills">
-                <q-expansion-item expand-separator icon="mdi-cog-outline" label="Habilidades" />
-              </a>
-              <a href="#works">
-                <q-expansion-item expand-separator icon="mdi-briefcase-outline" label="Trabalhos" />
-              </a>
-              <a href="#contact">
-                <q-expansion-item expand-separator icon="mdi-account-box-outline" label="Contatos" />
-              </a> -->
               <div class="hamb__link">
                 <a href="#Home" >
                   <q-icon name="mdi-home-outline" class="icon_n" />
@@ -65,65 +48,34 @@
             </q-list>
       </div>
     </q-drawer>
-    <q-page-container  >
-        <q-page padding id="Home" class="row  flex justify-center items-center bg-portifolio ">
-                  <div class=" col-xs-12 col-sm-12  col-md-12 animar2" >
+    <q-page-container>
+       <q-page id="Home" class="row  flex justify-center items-center bg-portifolio " >
+                  <div  class=" col-xs-12 col-sm-12  col-md-12 animar2" >
                     <div class=" text-center home_title1">Portifólio</div>
                     <div class=" text-center home_title2">Deiverson Chaves</div>
-                    <div class=" text-weight-thin text-center home_title3 ">
+                    <div class=" text-weight-thin text-center home_title3">
                       |  DEVELOPER FRONT END  |  UI/UX DESIGNER  |
                     </div>
-                   <a href="#sobre">
-                      <div class="q-pa-md flex justify-center items-center ">
-                        <div class="btn__home">
-                          <span class=" btn__font">SOBRE MIM</span>
-                          <q-icon name="mdi-chevron-down" class="btn__icon" />
+                    <a href="#sobre">
+                        <div class="q-pa-md flex justify-center items-center ">
+                          <div class="btn__home">
+                            <span class=" btn__font">SOBRE MIM</span>
+                            <q-icon name="mdi-chevron-down" class="btn__icon" />
+                          </div>
                         </div>
-                       </div>
-                    </a>
+                      </a>
                   </div>
                   <div class="flex items-center flex-center q-gutter-x-md animar1  ">
-                    <q-item manual-focus href="https://www.linkedin.com/in/deiverson-chaves-de-araujo/" target="blank">
+                    <q-item manual-focus href="https://www.linkedin.com/in/deiverson-chaves-de-araujo/" target="_blank">
                      <q-icon title="linkedin" name="mdi-linkedin" color="blue-grey-3" size="md" />
                     </q-item>
-                    <q-item manual-focus href="https://github.com/DeiversonTI/" target="blank">
+                    <q-item manual-focus href="https://github.com/DeiversonTI/" target="_blank">
                       <q-icon title="github" name="mdi-github" color="blue-grey-3" size="md" />
                     </q-item>
 
                   </div>
-          </q-page>
-
-       <!-- <q-page padding class="row" id="Home" >
-         <div class=" flex justify-center items-center col-xs-12 col-sm-12 col-md-6 animar1 " >
-          <q-img
-          src="../assets/65.png"
-          style="max-width: 70%;"
-          />
-        </div>
-         <div class="  justify-center items-center col-xs-12 col-sm-12 col-md-6 animar2" >
-            <div class="q-pa-md flex justify-start content-center items-center  text-left fit ">
-                <div class="q-pb-sm home_title1">
-                  Deiverson Chaves
-                  <br>
-                <span class=" home_title2 ">
-                  Desenvolvedor Front-End
-                </span>
-                </div>
-                <div class=" text-weight-thin text-justify home_title3 ">
-                    Estabeleçendo novos desafios, saindo da sua zona de conforto,
-                    enfrentando meus maiores medos todos os dias.
-                </div>
-                <q-btn
-                      rounded
-                      label="Contact"
-                      color="indigo-7"
-                      class="btn__contact"
-                />
-            </div>
-        </div>
-        </q-page> -->
-      </q-page-container>
-    <!--Fim da Página Index -->
+      </q-page>
+    </q-page-container>
     <!-- ******************* -->
     <!-- ******************* -->
     <!-- Página Rede Social -->
@@ -173,6 +125,7 @@ import social from '../pages/sobre.vue'
 import skill from '../pages/Skills.vue'
 import work from '../pages/Works.vue'
 import contatos from '../pages/Contact.vue'
+// import firstpage from '../pages/firstPage.vue'
 
 export default defineComponent({
   name: 'home',
@@ -181,6 +134,7 @@ export default defineComponent({
     skill,
     contatos,
     work
+    // firstpage
   },
   setup () {
     const rightDrawerOpen = ref(false)
