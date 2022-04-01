@@ -5,7 +5,9 @@
         <q-toolbar-title>
           <div class="row items-center">
             <div class="col text-left q-ml-md">
-              <span class="font__topo">Deiverson Chaves</span>
+              <a href="#Home" class="font__topo">
+              <span>Deiverson Chaves</span>
+              </a>
             </div>
          </div>
         </q-toolbar-title>
@@ -114,6 +116,11 @@
     <!--Fim Página Contact -->
     <!-- ******************** -->
     <!-- ******************** -->
+    <q-page>
+      <div>
+        <firstpage />
+      </div>
+    </q-page>
     <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
       <q-btn fab icon="keyboard_arrow_up" color="indigo-8" />
     </q-page-scroller>
@@ -125,7 +132,7 @@ import social from '../pages/sobre.vue'
 import skill from '../pages/Skills.vue'
 import work from '../pages/Works.vue'
 import contatos from '../pages/Contact.vue'
-// import firstpage from '../pages/firstPage.vue'
+import firstpage from '../pages/TestItem.vue'
 
 export default defineComponent({
   name: 'home',
@@ -133,8 +140,8 @@ export default defineComponent({
     social,
     skill,
     contatos,
-    work
-    // firstpage
+    work,
+    firstpage
   },
   setup () {
     const rightDrawerOpen = ref(false)

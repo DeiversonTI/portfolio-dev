@@ -3,7 +3,7 @@
     <!-- <div class="skills__home"> -->
       <div class="skills__boxfull">
         <div class="skills__title ">
-          <div>Habilidades</div>
+          <div>TODAS SKILLS</div>
         </div>
         <div class=" skills__skill q-pa-md">
               <div class="row flex justify-center items-center skills__box">
@@ -56,7 +56,7 @@
                           <div class="text-h5">DOCKER</div>
                         </div>
                     </div>
-                     <div class=" my-card col-xs-6 col-sm-6 col-md-3 bg-blue-grey-1 q-ma-sm">
+                     <div class=" my-card col-xs-6 col-sm-6 col-md-3 bg-blue-grey-1 q-ma-sm  ">
                         <div class="q-pt-md">
                           <img src="../assets/git.png" alt="" class="skills__img" >
                         </div>
@@ -400,7 +400,25 @@ section{
 }
 .skills__img{
   max-width: 50%;
+
 }
+.my-card:hover{
+  animation: ola 3s;
+  cursor: pointer;
+}
+@keyframes ola {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2)
+  }
+   100%{
+    transform: scale(1)
+  }
+
+}
+
 .skills__box{
   width: 60%;
   margin: 0 auto;

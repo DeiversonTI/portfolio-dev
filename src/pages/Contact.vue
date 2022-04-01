@@ -1,7 +1,12 @@
 <template>
   <q-page>
-    <div class=" window-height bg-dark">
-      Contact
+    <div class=" flex justify-center items-center full-width window-height bg-grey-1">
+      <div class=" ">
+        <div>
+          <span class="text-h2 text-grey-9 ">My Contact</span>
+        </div>
+      </div>
+
     </div>
 
   </q-page>

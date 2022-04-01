@@ -71,16 +71,26 @@
                               </div>
                             </div>
                           </div>
+                          <div class="flex justify-evenly full-width items-center q-mt-lg ">
+                            <div>
+                              <a href="#contact">
+                                <q-btn outline color="blue-grey-8"  label="Contato" style="width:150px" />
+                              </a>
+                            </div>
+                             <div>
+                              <q-btn  color="blue-grey-8"  label="Curriculun" style="width:150px" />
+                            </div>
+                          </div>
                 </div>
                 <!-- ************************* -->
                 <!-- SKILLS PROGRESS BAR -->
                 <div class="col-xs-12 col-sm-12 col-md">
-                          <div class="q-pa-md q-gutter-lg">
+                          <div class=" q-my-md q-gutter-md">
                             <div >
                               <span class="text-blue-grey-8 sobre__title__skills">Skills</span>
                             </div>
                             <div>
-                              <span class="text-blue-grey-8 sobre__title__skills2">Minhas Especialidades</span>
+                              <span class="text-blue-grey-8 sobre__title__skills2">Mais Usadas</span>
                             </div>
                             <div>
                                 <span class="skills__port">HTML</span>
@@ -138,6 +148,14 @@
                                   </div>
                                 </q-linear-progress>
                             </div>
+                            <div >
+                              <span class="skills__port">Firebase</span>
+                                <q-linear-progress size="18px" :value="progress8"  class="colorizar">
+                                  <div class="absolute-full flex flex-center">
+                                    <q-badge color="white" text-color="accent" :label="progressLabel8" />
+                                  </div>
+                                </q-linear-progress>
+                            </div>
                           </div>
                 </div>
               </div>
@@ -161,6 +179,7 @@ export default defineComponent({
     const progress5 = ref(0.85) // quasarJs
     const progress6 = ref(0.80) // tailWindCss
     const progress7 = ref(0.50) // docker
+    const progress8 = ref(0.80) // Firebase
 
     return {
       progress1,
@@ -182,7 +201,11 @@ export default defineComponent({
       progressLabel6: computed(() => (progress6.value * 100).toFixed(2) + '%'),
 
       progress7,
-      progressLabel7: computed(() => (progress7.value * 100).toFixed(2) + '%')
+      progressLabel7: computed(() => (progress7.value * 100).toFixed(2) + '%'),
+
+      progress8,
+      progressLabel8: computed(() => (progress8.value * 100).toFixed(2) + '%')
+
     }
   }
 })

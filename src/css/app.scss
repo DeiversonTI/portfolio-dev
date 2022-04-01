@@ -21,9 +21,10 @@ html{
 a{
   text-decoration: none;
 }
-.font__topo{
+.font__topo span{
   font-size: 0.9em;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: $blue-grey-1;
   font-weight: 600;
   width: 100%;
 
